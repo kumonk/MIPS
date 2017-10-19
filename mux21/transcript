@@ -1,0 +1,16 @@
+# OpenFile test_m.v 
+vlog test_m.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module m
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+vsim test
+# vsim test 
+# Loading work.test
+# Loading work.m
+view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave *
+run 990ns

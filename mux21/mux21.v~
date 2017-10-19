@@ -1,0 +1,14 @@
+/*           *
+ * mux21.v   *
+ * 2-1 MARUCHIBUREKUSA *
+ * (2-1 SEREKUTA KAIRO) */
+
+module mux21 (S1, D0, D1, Y);
+   input S1, D0, D1;
+   output Y;
+
+   // Multiplexer body
+   // Y = ((not S1) and D0) or (S1 and D1)
+   assign Y = (^S1 & D0)
+     | (S1 & D1);
+endmodule
